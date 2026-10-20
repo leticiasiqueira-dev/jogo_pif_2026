@@ -1,36 +1,66 @@
-# [Nome do jogo]
+<div align="center">
 
-Projeto da disciplina **Programação Imperativa e Funcional — 2026.2**, da CESAR School.
+# 🚀 [NOME DO JOGO]
 
-> Modelo em preenchimento: substituam os campos entre colchetes. As aplicações dos conceitos indicadas abaixo são propostas e devem ser atualizadas conforme a implementação.
+### Descrição a definir 
 
-## 1. Sobre o jogo
+**AÇÃO & SOBREVIVÊNCIA** · **TERMINAL** · **LINGUAGEM C**
 
-Um jogo de ação e sobrevivência no terminal em que o jogador controla uma nave espacial que perdeu completamente a comunicação com sua nave-mãe e ficou perdida no espaço. Para sobreviver, precisa desviar de ataques e chuvas de meteoros, destruir monstros e naves inimigas e enfrentar ondas de dificuldade crescente.
+Projeto de Programação Imperativa e Funcional  
+**CESAR School · 2026.2**
 
-O jogo envolve movimentação, colisões e decisões rápidas que desafiam os reflexos e o raciocínio estratégico do jogador.
+[O jogo](#sobre) · [Regras](#regras) · [Como jogar](#controles) · [Execução](#execucao) · [Equipe](#equipe)
 
-## 2. Objetivo
+</div>
+
+---
+
+> **📌 Sobre este modelo**  
+> Preencham os campos entre colchetes e atualizem as informações conforme o desenvolvimento. As regras ainda estão em definição; os usos dos conceitos são propostas para o grupo validar.
+
+| 🎮 Experiência | 🛠️ Desenvolvimento | 👥 Equipe |
+| :--- | :--- | :--- |
+| Ação e sobrevivência espacial | Planejamento inicial | 3 integrantes |
+| Ondas de inimigos e meteoros | C · jogo no terminal | Repositório compartilhado |
+
+---
+
+<a id="sobre"></a>
+
+## 🌌 Sobre o jogo
+
+A definir 
+
+---
+
+<a id="objetivo"></a>
+
+## 🎯 Sua missão
 
 Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 
-- **Condição de vitória:** [Definir se há uma última onda ou se a sobrevivência é contínua.]
-- **Condição de derrota:** [Definir quando a partida termina.]
+| 🟢 Vitória | 🔴 Derrota |
+| :--- | :--- |
+| [Definir se há uma última onda ou se a sobrevivência é contínua.] | [Definir quando a partida termina.] |
 
-## 3. Regras e mecânicas
+---
 
-### Movimentação
+<a id="regras"></a>
+
+## 🕹️ Regras e mecânicas
+
+### 01 · Movimentação
 
 - Direções permitidas: [Definir.]
 - Limites da área de movimentação: [Definir.]
 
-### Ataques
+### 02 · Ataques
 
 - Como a nave dispara: [Definir.]
 - Frequência ou limite dos disparos: [Definir.]
 - Elementos que podem ser destruídos: [Definir.]
 
-### Inimigos e meteoros
+### 03 · Perigos da galáxia
 
 | Elemento | Movimento e comportamento | Efeito ao atingir a nave |
 | --- | --- | --- |
@@ -38,7 +68,7 @@ Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 | Monstro espacial | [Definir.] | [Definir.] |
 | Meteoro | [Definir.] | [Definir.] |
 
-### Vidas e colisões
+### 04 · Vidas e colisões
 
 - Vidas ou energia inicial: [Definir.]
 - Colisão entre nave e inimigo: [Definir.]
@@ -47,7 +77,7 @@ Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 - Colisão entre tiro e meteoro: [Definir.]
 - O que acontece com elementos que saem da área de jogo: [Definir.]
 
-### Pontuação
+### 05 · Pontuação
 
 | Evento | Pontos |
 | --- | --- |
@@ -55,13 +85,17 @@ Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 | Destruir um monstro | [Definir.] |
 | Concluir uma onda | [Definir, se aplicável.] |
 
-### Ondas e dificuldade
+### 06 · Ondas e dificuldade
 
 - Condição para iniciar uma nova onda: [Definir.]
 - Quantidade de ondas: [Definir.]
 - O que muda a cada onda: [Velocidade, quantidade de inimigos ou outros fatores.]
 
-## 4. Controles
+---
+
+<a id="controles"></a>
+
+## ⌨️ Controles
 
 | Ação | Tecla |
 | --- | --- |
@@ -71,7 +105,11 @@ Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 | Atirar | [Definir.] |
 | Sair | [Definir.] |
 
-## 5. Tecnologias e dependências
+---
+
+<a id="tecnologias"></a>
+
+## ⚙️ Tecnologias
 
 - **Linguagem:** C.
 - **Interface:** terminal / linha de comando.
@@ -80,23 +118,31 @@ Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 - **Compilador e ferramentas:** [Preencher após validar o ambiente.]
 - **Sistemas operacionais testados:** [Preencher somente os efetivamente testados.]
 
-## 6. Como compilar e executar
+---
 
-### Preparação
+<a id="execucao"></a>
+
+## 🚀 Preparar e executar
+
+### 1. Preparar o ambiente
 
 1. Obter o projeto: [Inserir link do repositório e instruções.]
 2. Instalar as dependências: [Descrever os passos testados.]
 3. Preparar a biblioteca utilizada: [Descrever os passos necessários.]
 
-### Compilação
+### 2. Compilar
 
 [Inserir o comando de compilação validado pelo grupo ou explicar como usar o Makefile/script.]
 
-### Execução
+### 3. Iniciar a partida
 
 [Inserir o comando para iniciar o jogo e informar a pasta em que deve ser executado.]
 
-## 7. Conceitos obrigatórios da disciplina
+---
+
+<a id="conceitos"></a>
+
+## 🧩 Conceitos da disciplina
 
 | Conceito | Aplicação planejada | Local na implementação |
 | --- | --- | --- |
@@ -107,7 +153,11 @@ Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 | Matrizes | Representação da área do jogo | [Arquivo e matriz.] |
 | Leitura e escrita em arquivo | Persistência das melhores pontuações | [Arquivo e funções.] |
 
-## 8. Ranking e persistência
+---
+
+<a id="ranking"></a>
+
+## 🏆 Ranking e pontuações
 
 - Dados armazenados: [Nome, pontuação e outros campos definidos pelo grupo.]
 - Arquivo utilizado e localização: [Preencher.]
@@ -115,7 +165,11 @@ Sobreviver aos perigos da galáxia e avançar pelas ondas de inimigos.
 - Como consultar as melhores pontuações: [Preencher.]
 - Comportamento quando ainda não existe arquivo de ranking: [Definir.]
 
-## 9. Organização do projeto
+---
+
+<a id="organizacao"></a>
+
+## 📂 Organização do projeto
 
 Preencher conforme os arquivos forem criados.
 
@@ -125,26 +179,45 @@ Preencher conforme os arquivos forem criados.
 | [Nome/caminho.] | [Descrever.] |
 | [Nome/caminho.] | [Descrever.] |
 
-## 10. Estado do desenvolvimento
+---
+
+<a id="progresso"></a>
+
+## 📍 Progresso do projeto
+
+### Etapa 1 · Preparação
 
 - [x] Repositório criado e acesso dos três integrantes confirmado.
 - [ ] Nome e regras básicas definidos.
 - [ ] Ambiente de desenvolvimento validado pelos três integrantes.
 - [ ] Biblioteca de jogos funcionando.
+
+### Etapa 2 · Primeira versão jogável
+
 - [ ] Nave com movimentação e limites.
 - [ ] Meteoros com movimento automático.
 - [ ] Colisões e controle de vidas.
 - [ ] Tiros e inimigos.
+
+### Etapa 3 · Progressão e estruturas de dados
+
 - [ ] Pontuação e progressão das ondas.
 - [ ] Matriz utilizada no jogo.
 - [ ] Listas encadeadas e alocação/liberação de memória.
 - [ ] Ranking com leitura e escrita em arquivo.
 - [ ] Telas de início e fim de partida.
+
+### Etapa 4 · Revisão e entrega
+
 - [ ] Instruções de compilação e execução verificadas.
 - [ ] Testes manuais concluídos.
 - [ ] Vídeo demonstrativo publicado e link inserido.
 
-## 11. Verificação do jogo
+---
+
+<a id="testes"></a>
+
+## 🔎 Verificação do jogo
 
 Registrar os resultados depois de testar.
 
@@ -159,11 +232,20 @@ Registrar os resultados depois de testar.
 | Fechar e reabrir o jogo | Ranking salvo continua disponível | [Pendente/aprovado.] |
 | Executar sem arquivo de ranking | Jogo trata a ausência do arquivo | [Pendente/aprovado.] |
 
-## 12. Vídeo demonstrativo
+---
 
-[Inserir o link do vídeo com o jogo em execução.]
+<a id="video"></a>
 
-## 13. Integrantes
+## 🎬 Veja o jogo em ação
+
+> **Demonstração em breve**  
+> [Inserir aqui o link do vídeo com o jogo em execução.]
+
+---
+
+<a id="equipe"></a>
+
+## 👩‍🚀 Integrantes 
 
 | Integrante | GitHub | Contribuições |
 | --- | --- | --- |
@@ -171,8 +253,21 @@ Registrar os resultados depois de testar.
 | [Nome.] | [Link do perfil.] | [Preencher com as contribuições realizadas.] |
 | [Nome.] | [Link do perfil.] | [Preencher com as contribuições realizadas.] |
 
-## 14. Referências e créditos
+---
+
+<a id="referencias"></a>
+
+## 📚 Referências e créditos
 
 - Enunciado do projeto de Programação Imperativa e Funcional — 2026.2.
 - [CLI-LIB](https://github.com/tgfb/cli-lib/), caso utilizada.
 - [Adicionar documentação e outras referências consultadas.]
+
+---
+
+<div align="center">
+
+**🚀 [NOME DO JOGO]**  
+Programação Imperativa e Funcional · CESAR School · 2026.2
+
+</div>
