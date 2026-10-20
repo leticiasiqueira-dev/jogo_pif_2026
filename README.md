@@ -15,9 +15,6 @@ Projeto de Programação Imperativa e Funcional
 
 ---
 
-> **📌 Sobre este modelo**  
-> Preencham os campos entre colchetes e atualizem as informações conforme o desenvolvimento. As regras ainda estão em definição; os usos dos conceitos são propostas para o grupo validar.
-
 | 🎮 Experiência | 🛠️ Desenvolvimento | 👥 Equipe |
 | :--- | :--- | :--- |
 | Ação e sobrevivência espacial | Planejamento inicial | 3 integrantes |
