@@ -163,11 +163,20 @@ void liberar_tiros(Tiro *lista) {
 }
 
 #ifdef _WIN32
-void configurar_terminal(void) { SetConsoleOutputCP(CP_UTF8); }
+void configurar_terminal(void) {
+    SetConsoleOutputCP(CP_UTF8);
+
+    HANDLE terminal = GetStdHandle(STD_OUTPUT_HANDLE);
+    DWORD modo;
+
+    if (GetConsoleMode(terminal, &modo)) {
+        SetConsoleMode(terminal, modo | ENABLE_VIRTUAL_TERMINAL_PROCESSING);
+    }
+}
 void restaurar_terminal(void) { }
 void voltar_cursor(void) {
-    COORD pos = {0, 0};
-    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+    printf("\033[H\033[J");
+    fflush(stdout);
 }
 void esconder_cursor(void) {
     CONSOLE_CURSOR_INFO info;
