@@ -17,7 +17,7 @@
 #define MAX_SCORES 5
 #define ARQUIVO_SCORES "scores.txt"
 
-typedef struct Asteroide {
+typedef struct {
     int x;
     int y;
     int velocidade;
@@ -97,7 +97,7 @@ void liberar_asteroides(Asteroide *lista){
     }
 }
 
-typedef struct Tiro {
+typedef struct {
     int x;
     int y;
     struct Tiro *next;
