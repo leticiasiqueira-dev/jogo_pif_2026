@@ -1,16 +1,15 @@
 
-# Executaveis
 *.exe
 *.out
 *.o
 
-# Arquivos temporarios
 *.tmp
 *.log
 
-# Configuracoes do VS Code
 .vscode/
 
-# Arquivos do sistema
 Thumbs.db
 .DS_Store
+
+jogo
+build/

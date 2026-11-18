@@ -3,7 +3,7 @@
 
 #include "asteroide.h"   // verificar_colisoes usa Asteroide
 
-typedef struct {
+typedef struct Tiro {
     int x;
     int y;
     struct Tiro *next;
