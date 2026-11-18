@@ -56,7 +56,7 @@ void mostrar_ranking(int scores[], int n, int pos_nova){
     printf("\n========== TOP %d ==========\n", MAX_SCORES);
 
     for (int i = 0; i < n; i++){
-        printf("%d. %-6d%s\n", i + 1, scores[i], (i == pos_nova) ? " <-- voce" : "");
+        printf("%d. %-6d%s\n", i + 1, scores[i], (i == pos_nova) ? " <-- você" : "");
     }
 
     if (pos_nova < 0){
