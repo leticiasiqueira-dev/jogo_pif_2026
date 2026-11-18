@@ -1,7 +1,7 @@
 #ifndef ASTEROIDE_H
 #define ASTEROIDE_H
 
-typedef struct {
+typedef struct Asteroide {
     int x;
     int y;
     int velocidade;
