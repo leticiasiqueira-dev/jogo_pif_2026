@@ -52,3 +52,16 @@ int registrar_score(int nova, int scores[], int *n){
     return pos;
 }
 
+void mostrar_ranking(int scores[], int n, int pos_nova){
+    printf("\n========== TOP %d ==========\n", MAX_SCORES);
+
+    for (int i = 0; i < n; i++){
+        printf("%d. %-6d%s\n", i + 1, scores[i], (i == pos_nova) ? " <-- voce" : "");
+    }
+
+    if (pos_nova < 0){
+        printf("\nSua pontuação não entrou no top %d.\n", MAX_SCORES);
+    } else if (pos_nova == 0){
+        printf("\nNOVO RECORDE!\n");
+    }
+}
