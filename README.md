@@ -6,7 +6,7 @@ Jogo de ação espacial em C para o terminal, desenvolvido na disciplina de Prog
 
 Pilote uma nave e sobreviva à passagem de asteroides. Eles surgem no topo da arena em colunas aleatórias e descem em velocidades diferentes. Mova a nave na horizontal para desviar deles e dispare para abrir caminho.
 
-- A partida começa com **3 vidas**. Cada asteroide que atinge a nave tira uma vida.
+- A partida começa com **3 vidas**, mostradas como corações. Cada asteroide que atinge a nave tira uma vida, e na última vida a linha de status fica vermelha.
 - Cada asteroide destruído vale **100 pontos**.
 - Você vence ao alcançar **1.000 pontos**, o equivalente a 10 asteroides destruídos.
 - A partida termina em derrota quando as vidas acabam.
@@ -20,7 +20,7 @@ Pilote uma nave e sobreviva à passagem de asteroides. Eles surgem no topo da ar
 | `Espaço` | Atirar |
 | `Q` | Encerrar a partida |
 
-Na arena, `^` representa a nave, `O` representa um asteroide e `!` representa um disparo.
+Na arena, a nave é um foguete de 3×3 caracteres, `O` representa um asteroide e `!` representa um disparo.
 
 ## Como compilar e executar
 
@@ -58,7 +58,7 @@ No fim da partida, inclusive ao sair com `Q`, o jogo exibe as **cinco melhores p
 | Ponteiros | Os ponteiros permitem percorrer e alterar as listas de asteroides e disparos. |
 | Alocação dinâmica | Os nós são criados com `malloc` e liberados com `free` quando são removidos ou quando a partida termina. |
 | Listas encadeadas | Mantêm os asteroides e os disparos ativos na arena. |
-| Matrizes | A função `desenhar_tela` usa a matriz `arena[LINHAS][COLUNAS]`, com 9 linhas e 31 colunas. A cada atualização, ela posiciona os símbolos da nave, dos asteroides e dos tiros nas células `[y][x]` e percorre a matriz para desenhar a arena. |
+| Matrizes | A função `desenhar_tela` usa a matriz `arena[LINHAS][COLUNAS]`, com 18 linhas e 60 colunas. A cada atualização, ela posiciona os símbolos da nave, dos asteroides e dos tiros nas células `[y][x]` e percorre a matriz para desenhar a arena. |
 | Leitura e escrita em arquivo | O placar lê as pontuações com `fscanf` e grava o ranking com `fprintf`. |
 | Biblioteca de jogos | Os módulos `screen`, `keyboard` e `timer` da CLI-LIB cuidam da tela, do teclado e do intervalo entre atualizações. |
 
