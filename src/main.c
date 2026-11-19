@@ -9,7 +9,7 @@
 #include "tiro.h"
 #include "placar.h"
 
-#define TEMPO_FRAME_MS 50
+
 #define ORIGEM_X 2
 #define ORIGEM_Y 4
 
@@ -79,7 +79,7 @@ void desenhar_tela(int nave_x, Asteroide *lista, Tiro *tiros, int pontos, int vi
 
 int main(void) {
     int nave_x = COLUNAS / 2;
-    int vidas = 3;
+    int vidas = VIDAS_INICIAIS;
     int pontos = 0;
     int frame = 0;
     int jogando = 1;
@@ -116,7 +116,7 @@ int main(void) {
         }
 
         if (timerTimeOver()) {
-            if (frame % 15 == 0) {
+            if (frame % INTERVALO_ASTEROIDE == 0) {
                 adicionar_asteroide(&lista);
             }
 

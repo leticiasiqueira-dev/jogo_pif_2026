@@ -11,7 +11,7 @@ Asteroide *criar_asteroide(void){
 
     a->x = rand() % COLUNAS;
     a->y = 0;
-    a->velocidade = 1 + rand() % 4;
+    a->velocidade = 1 + rand() % VELOCIDADE_MAX_ASTEROIDE;
     a->contador = 0;
     a->next = NULL;
 
