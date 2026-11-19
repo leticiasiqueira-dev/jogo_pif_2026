@@ -26,8 +26,6 @@ Na arena, `^` representa a nave, `O` representa um asteroide e `!` representa um
 
 Use um terminal no Linux, no macOS ou no WSL (Subsistema do Windows para Linux). Você precisa de Git, Make e um compilador C. O Makefile usa o comando `gcc` por padrão. Os módulos da [CLI-LIB](https://github.com/tgfb/cli-lib/) já estão incluídos no repositório.
 
-Para baixar, compilar e executar:
-
 ```bash
 git clone https://github.com/leticiasiqueira-dev/jogo_pif_2026.git
 cd jogo_pif_2026
@@ -60,6 +58,7 @@ No fim da partida, inclusive ao sair com `Q`, o jogo exibe as **cinco melhores p
 | Ponteiros | Os ponteiros permitem percorrer e alterar as listas de asteroides e disparos. |
 | Alocação dinâmica | Os nós são criados com `malloc` e liberados com `free` quando são removidos ou quando a partida termina. |
 | Listas encadeadas | Mantêm os asteroides e os disparos ativos na arena. |
+| Matrizes | A função `desenhar_tela` usa a matriz `arena[LINHAS][COLUNAS]`, com 9 linhas e 31 colunas. A cada atualização, ela posiciona os símbolos da nave, dos asteroides e dos tiros nas células `[y][x]` e percorre a matriz para desenhar a arena. |
 | Leitura e escrita em arquivo | O placar lê as pontuações com `fscanf` e grava o ranking com `fprintf`. |
 | Biblioteca de jogos | Os módulos `screen`, `keyboard` e `timer` da CLI-LIB cuidam da tela, do teclado e do intervalo entre atualizações. |
 
@@ -70,6 +69,6 @@ Link do vídeo pendente.
 
 ## Equipe
 
-- Letícia Almeida Abreu de Siqueira 
+- Letícia Almeida Abreu de Siqueira
 - Letícia Dornas de Araújo
 - Maria Monalysa da Silva
