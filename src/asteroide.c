@@ -43,7 +43,9 @@ void atualizar_asteroides(Asteroide **lista, int *vidas, int nave_x){
 
         int remover = 0;
 
-        if(atual->y == LINHA_NAVE && atual->x == nave_x){
+        int dx = abs(atual->x - nave_x);
+
+        if((atual->y == LINHA_NAVE && dx == 0) || (atual->y == LINHA_NAVE + 1 && dx <= NAVE_META)){
             (*vidas)--;
             remover = 1;
         }else if (atual->y >= LINHAS){
