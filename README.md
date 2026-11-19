@@ -65,7 +65,7 @@ No fim da partida, inclusive ao sair com `Q`, o jogo exibe as **cinco melhores p
 ## Vídeo demonstrativo
 
 <!-- Substitua a linha abaixo pelo link do vídeo com o jogo em execução. -->
-Link do vídeo pendente.
+https://youtu.be/FDj8ElR78h4
 
 ## Equipe
 
