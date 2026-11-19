@@ -58,7 +58,7 @@ No fim da partida, inclusive ao sair com `Q`, o jogo exibe as **cinco melhores p
 | Ponteiros | Os ponteiros permitem percorrer e alterar as listas de asteroides e disparos. |
 | Alocação dinâmica | Os nós são criados com `malloc` e liberados com `free` quando são removidos ou quando a partida termina. |
 | Listas encadeadas | Mantêm os asteroides e os disparos ativos na arena. |
-| Matrizes | A função `desenhar_tela` usa a matriz `arena[LINHAS][COLUNAS]`, com 18 linhas e 60 colunas. A cada atualização, ela posiciona os símbolos da nave, dos asteroides e dos tiros nas células `[y][x]` e percorre a matriz para desenhar a arena.A nave é desenhada por cima: a matriz `NAVE_COR[3][3]` define a cor de cada caractere do foguete, cujo desenho fica em `NAVE_SPRITE`. |
+| Matrizes | A função `desenhar_tela` usa a matriz `arena[LINHAS][COLUNAS]`, com 18 linhas e 60 colunas. A cada atualização, ela posiciona os símbolos da nave, dos asteroides e dos tiros nas células `[y][x]` e percorre a matriz para desenhar a arena. A nave é desenhada por cima: a matriz `NAVE_COR[3][3]` define a cor de cada caractere do foguete, cujo desenho fica em `NAVE_SPRITE`. |
 | Leitura e escrita em arquivo | O placar lê as pontuações com `fscanf` e grava o ranking com `fprintf`. |
 | Biblioteca de jogos | Os módulos `screen`, `keyboard` e `timer` da CLI-LIB cuidam da tela, do teclado e do intervalo entre atualizações. |
 
