@@ -13,6 +13,18 @@
 #define ORIGEM_X 2
 #define ORIGEM_Y 4
 
+static const char *NAVE_SPRITE[NAVE_ALTURA] = {
+    " ^ ",
+    "/O\\",
+    " V "
+};
+
+static const screenColor NAVE_COR[NAVE_ALTURA][NAVE_LARGURA] = {
+    {BLACK,    WHITE,     BLACK},
+    {LIGHTRED, LIGHTCYAN, LIGHTRED},
+    {BLACK,    YELLOW,    BLACK}
+};
+
 static void desenhar_na_arena(int x, int y, char c, screenColor cor) {
     screenGotoxy(ORIGEM_X + 1 + x, ORIGEM_Y + y);
     screenSetColor(cor, BLACK);
@@ -57,7 +69,6 @@ void desenhar_tela(int nave_x, Asteroide *lista, Tiro *tiros, int pontos, int vi
         }
     }
 
-    arena[LINHA_NAVE][nave_x] = '^';
 
     for (int y = 0; y < LINHAS; y++) {
         screenSetColor(LIGHTGRAY, BLACK);
@@ -72,9 +83,16 @@ void desenhar_tela(int nave_x, Asteroide *lista, Tiro *tiros, int pontos, int vi
                 case '!':
                     desenhar_na_arena(x, y, '!', LIGHTRED);
                     break;
-                case '^':
-                    desenhar_na_arena(x, y, '^', LIGHTCYAN);
-                    break;
+            }
+        }
+    }
+
+    for (int i = 0; i < NAVE_ALTURA; i++) {
+        for (int j = 0; j < NAVE_LARGURA; j++) {
+            if (NAVE_SPRITE[i][j] != ' ') {
+                screenSetColor(NAVE_COR[i][j], BLACK);
+                screenGotoxy(ORIGEM_X + 1 + nave_x - NAVE_META + j, ORIGEM_Y + LINHA_NAVE + i);
+                printf("%c", NAVE_SPRITE[i][j]);
             }
         }
     }
@@ -107,11 +125,11 @@ int main(void) {
         if (keyhit()) {
             int tecla = readch();
 
-            if ((tecla == 'a' || tecla == 'A') && nave_x > 0) {
+            if ((tecla == 'a' || tecla == 'A') && nave_x > NAVE_META) {
                 nave_x--;
             }
 
-            if ((tecla == 'd' || tecla == 'D') && nave_x < COLUNAS - 1) {
+            if ((tecla == 'd' || tecla == 'D') && nave_x < COLUNAS - 1 - NAVE_META) {
                 nave_x++;
             }
 
