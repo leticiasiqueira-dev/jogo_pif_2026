@@ -20,6 +20,8 @@ static void desenhar_na_arena(int x, int y, char c, screenColor cor) {
 }
 
 void desenhar_tela(int nave_x, Asteroide *lista, Tiro *tiros, int pontos, int vidas) {
+    char arena[LINHAS][COLUNAS];
+
     screenSetColor(YELLOW, BLACK);
     screenGotoxy(ORIGEM_X + 10, 0);
     printf("ÓRBITA EM CAOS");
@@ -28,25 +30,45 @@ void desenhar_tela(int nave_x, Asteroide *lista, Tiro *tiros, int pontos, int vi
     screenGotoxy(ORIGEM_X, 2);
     printf("Pontuação: %-6d  Meta: %d  Vidas: %d", pontos, META_VITORIA, vidas);
 
-    for (int i = 0; i < LINHAS; i++) {
-        screenSetColor(LIGHTGRAY, BLACK);
-        screenGotoxy(ORIGEM_X, ORIGEM_Y + i);
-        printf("|%*s|", COLUNAS, "");
+    for (int y = 0; y < LINHAS; y++) {
+        for (int x = 0; x < COLUNAS; x++) {
+            arena[y][x] = ' ';
+        }
     }
 
     for (Asteroide *a = lista; a != NULL; a = a->next) {
-        if (a->y >= 0 && a->y < LINHAS) {
-            desenhar_na_arena(a->x, a->y, 'O', BROWN);
+        if (a->y >= 0 && a->y < LINHAS && a->x >= 0 && a->x < COLUNAS) {
+            arena[a->y][a->x] = 'O';
         }
     }
 
     for (Tiro *t = tiros; t != NULL; t = t->next) {
-        if (t->y >= 0 && t->y < LINHAS) {
-            desenhar_na_arena(t->x, t->y, '!', LIGHTRED);
+        if (t->y >= 0 && t->y < LINHAS && t->x >= 0 && t->x < COLUNAS) {
+            arena[t->y][t->x] = '!';
         }
     }
 
-    desenhar_na_arena(nave_x, LINHA_NAVE, '^', LIGHTCYAN);
+    arena[LINHA_NAVE][nave_x] = '^';
+
+    for (int y = 0; y < LINHAS; y++) {
+        screenSetColor(LIGHTGRAY, BLACK);
+        screenGotoxy(ORIGEM_X, ORIGEM_Y + y);
+        printf("|%*s|", COLUNAS, "");
+
+        for (int x = 0; x < COLUNAS; x++) {
+            switch (arena[y][x]) {
+                case 'O':
+                    desenhar_na_arena(x, y, 'O', BROWN);
+                    break;
+                case '!':
+                    desenhar_na_arena(x, y, '!', LIGHTRED);
+                    break;
+                case '^':
+                    desenhar_na_arena(x, y, '^', LIGHTCYAN);
+                    break;
+            }
+        }
+    }
 
     screenSetColor(LIGHTGRAY, BLACK);
     screenGotoxy(ORIGEM_X, ORIGEM_Y + LINHAS + 1);
