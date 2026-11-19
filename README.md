@@ -47,7 +47,7 @@ No fim da partida, inclusive ao sair com `Q`, o jogo exibe as **cinco melhores p
 | [`src/asteroide.c`](src/asteroide.c) | Criação e movimento dos asteroides e colisão com a nave |
 | [`src/tiro.c`](src/tiro.c) | Criação e movimento dos disparos, colisão com asteroides e atualização da pontuação |
 | [`src/placar.c`](src/placar.c) | Leitura, atualização, gravação e exibição do ranking |
-| [`include/`](include/) | Cabeçalhos e configurações do jogo, como tamanho da arena e meta de pontos |
+| [`include/`](include/) | Cabeçalhos e configurações do jogo, como tamanho da arena, nave e meta de pontos |
 | [`Makefile`](Makefile) | Compilação e execução do jogo |
 
 ## Conceitos de C aplicados
