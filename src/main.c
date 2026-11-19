@@ -117,18 +117,18 @@ int main(void) {
 
     if (pontos >= META_VITORIA) {
         printf("=====================================\n");
-        printf("            VITORIA!\n");
-        printf(" Voce destruiu %d meteoros!\n", pontos / PONTOS_POR_ASTEROIDE);
-        printf(" Pontuacao final: %d\n", pontos);
+        printf("            VITÓRIA!\n");
+        printf(" Você destruiu %d meteoros!\n", pontos / PONTOS_POR_ASTEROIDE);
+        printf(" Pontuação final: %d\n", pontos);
         printf("=====================================\n");
     } else if (vidas <= 0) {
         printf("=====================================\n");
         printf("            GAME OVER!\n");
-        printf(" Sua nave foi destruida.\n");
-        printf(" Pontuacao final: %d\n", pontos);
+        printf(" Sua nave foi destruída.\n");
+        printf(" Pontuação final: %d\n", pontos);
         printf("=====================================\n");
     } else {
-        printf("Jogo encerrado pelo jogador. Pontuacao final: %d\n", pontos);
+        printf("Jogo encerrado pelo jogador. Pontuação final: %d\n", pontos);
     }
 
     int top[MAX_SCORES];
