@@ -26,9 +26,18 @@ void desenhar_tela(int nave_x, Asteroide *lista, Tiro *tiros, int pontos, int vi
     screenGotoxy(ORIGEM_X + 10, 0);
     printf("ÓRBITA EM CAOS");
 
-    screenSetColor(WHITE, BLACK);
+    screenSetColor(vidas == 1 ? LIGHTRED : WHITE, BLACK);
     screenGotoxy(ORIGEM_X, 2);
-    printf("Pontuação: %-6d  Meta: %d  Vidas: %d", pontos, META_VITORIA, vidas);
+    printf("Pontuação: %-6d  Meta: %d  Vidas: ", pontos, META_VITORIA);
+
+    for (int i = 0; i < VIDAS_INICIAIS; i++) {
+        if (i < vidas) {
+            screenSetColor(LIGHTRED, BLACK);
+            printf("♥ ");
+        } else {
+            printf("  ");
+        }
+    }
 
     for (int y = 0; y < LINHAS; y++) {
         for (int x = 0; x < COLUNAS; x++) {
